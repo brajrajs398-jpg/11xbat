@@ -32,6 +32,10 @@ import {
 const app = express();
 app.use(express.json());
 
+app.get('/health', (_req, res) => {
+  res.json({ status: 'ok' });
+});
+
 // Existing routes
 app.post('/api/games/slot/spin', authMiddleware, slotSpin);
 app.post('/api/games/dice/roll', authMiddleware, diceRoll);
@@ -71,5 +75,14 @@ app.post('/api/games/dicetable/play', authMiddleware, diceTablePlay);
 
 // 6. Game Show
 app.post('/api/games/gameshow/play', authMiddleware, gameShowPlay);
+
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+
+// Only auto-start when run directly (not when imported, e.g. by tests).
+if (import.meta.url === `file://${process.argv[1]}`) {
+  app.listen(PORT, () => {
+    console.log(`PlayVault backend listening on port ${PORT}`);
+  });
+}
 
 export default app;
