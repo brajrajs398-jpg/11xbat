@@ -1,6 +1,50 @@
 # PlayVault
 
-## 🔴 NEXT PRIORITY (set 17 Aug 2026) — Give every catalog game its own visuals
+## 🔴 NEXT PRIORITY #2 (set 17 Aug 2026) — 7 new game engines to build
+
+All original mechanics — none copied from any existing app's assets/code,
+just common/generic game genres nobody owns. Each needs: backend engine
+in `games.ts` (server-authoritative, same pattern as existing engines —
+debit → compute outcome → credit → record history), a `game_history`
+entry, an `engineType` added to `CatalogGame`, and its own frontend
+component. Suggested build order: Indian luck games first (simplest
+rules, proven popular demand), then the 4 mini-games.
+
+**Popular Indian luck-based games** (genuinely luck-based already, no
+"skill-to-luck" conversion needed):
+1. **Andar Bahar** — one card shown ("joker"), players bet Andar (left)
+   or Bahar (right); dealer deals alternating cards until a match to the
+   joker's rank appears on one side. ~1.9x payout on the side that wins.
+2. **Dragon Tiger** — two cards dealt (Dragon, Tiger), higher card wins,
+   tie is a side bet. Payout ~1.95x Dragon/Tiger, ~8x Tie (same shape as
+   Baccarat's Player/Banker/Tie — could even reuse a lot of Baccarat's
+   backend pattern).
+3. **7 Up 7 Down** — bet Under 7 / Over 7 / Exactly 7 on two dice.
+   Under/Over ~1.9x, Exactly-7 ~4-5x (matches the Dice Table odds shape).
+
+**Original mini-games** (new mechanics, not modeled on any existing
+casino game):
+4. **Scratch Card** — reveal a 3x3 grid of symbols server-side already
+   determined at purchase; 3 matching symbols in a row/col/diag wins per
+   a paytable. Single request/response, no multi-step round needed.
+5. **Spin & Win** — a second luck-wheel, distinct from Game Show, with
+   its own segment set/weights and its own visual skin so it doesn't
+   feel like a Game Show reskin.
+6. **Rock-Paper-Scissors vs Dealer** — player picks R/P/S, dealer's pick
+   is a weighted-random server roll (not truly 33/33/33 — bias it toward
+   a target house edge like every other engine here), win/lose/push
+   payout similar to Teen Patti's 1:1 + push.
+7. **Memory Match** — flip pairs of cards server-side revealed one at a
+   time; payout scales with how few flips it took / how many pairs
+   found before a miss limit, weighted so the odds still favor the
+   house on average.
+
+Once these are live, revisit the visual-variety priority below so these
+7 also get proper skins from day one instead of needing a retrofit.
+
+---
+
+## 🔴 NEXT PRIORITY #1 (set 17 Aug 2026) — Give every catalog game its own visuals
 
 **The problem:** `src/data/gamesCatalog.ts` has ~2,892 entries, but they all
 map to just 11 `engineType`s (roulette, blackjack, baccarat, teenpatti,
