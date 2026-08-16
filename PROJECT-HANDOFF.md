@@ -1,6 +1,50 @@
 # PlayVault
 
-## Phase 8 (17 Aug 2026) — Merged the two diverged codebases into one
+## 🔴 NEXT PRIORITY (set 17 Aug 2026) — Give every catalog game its own visuals
+
+**The problem:** `src/data/gamesCatalog.ts` has ~2,892 entries, but they all
+map to just 11 `engineType`s (roulette, blackjack, baccarat, teenpatti,
+gameshow, dice, slot, crash, coinflip, limbo, keno). Every catalog entry
+sharing an `engineType` renders through the exact same component (e.g.
+`AnimatedLiveRoulette.tsx`) with only `name`, `provider`, and an `accent`
+gradient string changed. So "Celestial Roulette", "Golden Roulette", and
+"Classic Roulette" are pixel-identical to play — same board, same wheel
+art, same animation, same button layout — just a different title and
+background color. A player will immediately notice this and feel like
+they're playing one game 200 times under different names.
+
+**What's needed:** each catalog game should feel distinct when played —
+different skin/theme, different animation style, and ideally different
+"playing method" (table layout, control placement, pacing) within what
+its engine's rules allow. Not asking for 2,892 fully separate game
+engines — the rules/payout logic can and should stay shared per
+`engineType` (that's the secure, tested backend logic from Phase 8) — but
+the *presentation layer* needs real variety.
+
+**Suggested approach for whoever picks this up:**
+1. For each `engineType`, design a small set of visual "skins" (e.g. 4-8
+   Roulette skins: neon/cyberpunk, classic Vegas green felt, gold VIP,
+   Indian-themed, minimalist, etc.) — different wheel art, card backs,
+   table felt, color palette, and win/lose animation per skin.
+2. Add a `skin` (or `visualVariant`) field to `CatalogGame` in
+   `gamesCatalog.ts`, distributed across entries of the same `engineType`
+   so they don't all get the same skin.
+3. Refactor each `AnimatedLive*`/`*Game.tsx` component to read `skin` and
+   render the matching theme — pull shared game logic (the `api.*` calls
+   from Phase 8, bet validation, etc.) into a hook so skins are purely
+   presentational and don't touch the already-secure backend calls.
+4. Where the engine's rules genuinely allow it (e.g. Slots reel count/
+   paylines, Crash curve style, Wheel segment count), vary the actual
+   interaction pattern too, not just the skin — this is what makes it feel
+   like a different *game*, not just a different coat of paint on the
+   same one.
+
+This is purely a frontend/presentation task — none of it should touch
+`backend/backend/src/games.ts` or the payout logic fixed in Phase 8 below.
+
+---
+
+
 
 There were two separate copies of this app that had drifted apart:
 1. **This codebase** (real JWT auth, full frontend, catalog, docker) — but
