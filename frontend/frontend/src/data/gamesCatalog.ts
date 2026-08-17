@@ -8,6 +8,7 @@ export interface CatalogGame {
   subCategory: string;
   provider: string;
   engineType: 'roulette' | 'blackjack' | 'baccarat' | 'teenpatti' | 'gameshow' | 'dice' | 'slot' | 'crash' | 'coinflip' | 'limbo' | 'keno';
+  skin?: string;
   accent: string;
   label: string | null;
   icon: string;
@@ -22,6 +23,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#154714] via-[#1f9387] to-[#4436e2]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -33,6 +35,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#14473b] via-[#1f6493] to-[#d336e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -44,6 +47,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#471428] via-[#93381f] to-[#36e244]",
     "label": null,
     "icon": "ROULETTE"
@@ -88,6 +92,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#201447] via-[#931f64] to-[#e25036]",
     "label": null,
     "icon": "ROULETTE"
@@ -99,6 +104,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#142547] via-[#781f93] to-[#e23664]",
     "label": "VIP",
     "icon": "ROULETTE"
@@ -198,6 +204,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#142e47] via-[#261f93] to-[#e236ab]",
     "label": null,
     "icon": "ROULETTE"
@@ -209,6 +216,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#14473d] via-[#1f2893] to-[#b436e2]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -231,6 +239,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#14472e] via-[#1f6893] to-[#ce36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -253,6 +262,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#2d1447] via-[#931f87] to-[#e28f36]",
     "label": null,
     "icon": "ROULETTE"
@@ -330,6 +340,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#144347] via-[#361f93] to-[#c836e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -341,6 +352,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#141647] via-[#7c1f93] to-[#e2363e]",
     "label": null,
     "icon": "ROULETTE"
@@ -396,6 +408,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#143547] via-[#281f93] to-[#e236b7]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -429,6 +442,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#244714] via-[#1f9374] to-[#3641e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -462,6 +476,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#471442] via-[#93251f] to-[#91e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -484,6 +499,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#301447] via-[#931f70] to-[#e28f36]",
     "label": null,
     "icon": "ROULETTE"
@@ -495,6 +511,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#144723] via-[#1f8193] to-[#4d36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -506,6 +523,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144714] via-[#1f9381] to-[#3936e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -528,6 +546,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#471445] via-[#93361f] to-[#9de236]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -550,6 +569,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#143447] via-[#341f93] to-[#e2369a]",
     "label": null,
     "icon": "ROULETTE"
@@ -561,6 +581,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#472b14] via-[#60931f] to-[#36e23b]",
     "label": "VIP",
     "icon": "ROULETTE"
@@ -616,6 +637,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#473714] via-[#5d931f] to-[#36e278]",
     "label": null,
     "icon": "ROULETTE"
@@ -627,6 +649,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144744] via-[#1f4f93] to-[#e236a8]",
     "label": null,
     "icon": "ROULETTE"
@@ -649,6 +672,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#471714] via-[#7d931f] to-[#36e291]",
     "label": null,
     "icon": "ROULETTE"
@@ -693,6 +717,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#142d47] via-[#421f93] to-[#e2367d]",
     "label": null,
     "icon": "ROULETTE"
@@ -748,6 +773,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#472f14] via-[#62931f] to-[#36e2a0]",
     "label": null,
     "icon": "ROULETTE"
@@ -759,6 +785,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#143047] via-[#4b1f93] to-[#e23675]",
     "label": null,
     "icon": "ROULETTE"
@@ -770,6 +797,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#14473b] via-[#1f3a93] to-[#9436e2]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -781,6 +809,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#473f14] via-[#5b931f] to-[#36b7e2]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -792,6 +821,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#14471c] via-[#1f7093] to-[#364ae2]",
     "label": null,
     "icon": "ROULETTE"
@@ -803,6 +833,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#472614] via-[#64931f] to-[#36e261]",
     "label": null,
     "icon": "ROULETTE"
@@ -814,6 +845,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#351447] via-[#931f62] to-[#e29736]",
     "label": null,
     "icon": "ROULETTE"
@@ -825,6 +857,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#473d14] via-[#1f9321] to-[#36e28f]",
     "label": null,
     "icon": "ROULETTE"
@@ -836,6 +869,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#351447] via-[#931f59] to-[#e2d636]",
     "label": null,
     "icon": "ROULETTE"
@@ -847,6 +881,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#224714] via-[#1f935b] to-[#364ae2]",
     "label": null,
     "icon": "ROULETTE"
@@ -869,6 +904,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#1d4714] via-[#1f9193] to-[#3686e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -880,6 +916,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471430] via-[#932a1f] to-[#e2e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -891,6 +928,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#3e4714] via-[#21931f] to-[#36e2bd]",
     "label": null,
     "icon": "ROULETTE"
@@ -902,6 +940,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#144719] via-[#1f6c93] to-[#5836e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -913,6 +952,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#144720] via-[#1f7f93] to-[#3644e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -990,6 +1030,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#271447] via-[#8d1f93] to-[#e24a36]",
     "label": null,
     "icon": "ROULETTE"
@@ -1001,6 +1042,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#3d1447] via-[#93231f] to-[#e29736]",
     "label": null,
     "icon": "ROULETTE"
@@ -1034,6 +1076,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#1f1447] via-[#931f66] to-[#e24436]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -1045,6 +1088,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#3d1447] via-[#93211f] to-[#b7e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -1067,6 +1111,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#471437] via-[#932c1f] to-[#91e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -1078,6 +1123,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471438] via-[#933a1f] to-[#b4e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -1089,6 +1135,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#3a4714] via-[#1f9338] to-[#36e2c5]",
     "label": null,
     "icon": "ROULETTE"
@@ -1100,6 +1147,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144745] via-[#1f4093] to-[#bf36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -1111,6 +1159,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#144717] via-[#1f938f] to-[#3666e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -1122,6 +1171,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#144726] via-[#1f6693] to-[#9136e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -1133,6 +1183,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#434714] via-[#34931f] to-[#36e29d]",
     "label": null,
     "icon": "ROULETTE"
@@ -1144,6 +1195,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#47141d] via-[#93811f] to-[#6ce236]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -1155,6 +1207,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#181447] via-[#7c1f93] to-[#e28c36]",
     "label": null,
     "icon": "ROULETTE"
@@ -1166,6 +1219,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#471420] via-[#93701f] to-[#44e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -1177,6 +1231,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#461447] via-[#93251f] to-[#e2d336]",
     "label": null,
     "icon": "ROULETTE"
@@ -1188,6 +1243,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#473a14] via-[#55931f] to-[#36cbe2]",
     "label": "VIP",
     "icon": "ROULETTE"
@@ -1199,6 +1255,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#281447] via-[#931f57] to-[#e24a36]",
     "label": null,
     "icon": "ROULETTE"
@@ -1210,6 +1267,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144724] via-[#1f8f93] to-[#9136e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -2387,6 +2445,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#473514] via-[#6c931f] to-[#36e258]",
     "label": null,
     "icon": "ROULETTE"
@@ -2398,6 +2457,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#47142a] via-[#93721f] to-[#5be236]",
     "label": null,
     "icon": "ROULETTE"
@@ -2409,6 +2469,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471c14] via-[#93831f] to-[#66e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -2475,6 +2536,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#1c4714] via-[#1f9383] to-[#3675e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -2508,6 +2570,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#472414] via-[#72931f] to-[#36e27b]",
     "label": null,
     "icon": "ROULETTE"
@@ -2530,6 +2593,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472814] via-[#66931f] to-[#36e255]",
     "label": null,
     "icon": "ROULETTE"
@@ -2629,6 +2693,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#471d14] via-[#938f1f] to-[#64e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -2640,6 +2705,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#1a1447] via-[#761f93] to-[#e23639]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -2662,6 +2728,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471f14] via-[#81931f] to-[#36e29d]",
     "label": null,
     "icon": "ROULETTE"
@@ -2673,6 +2740,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144734] via-[#1f5d93] to-[#5b36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -3234,6 +3302,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#251447] via-[#931f6a] to-[#e26136]",
     "label": null,
     "icon": "ROULETTE"
@@ -3278,6 +3347,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#211447] via-[#8f1f93] to-[#e23636]",
     "label": null,
     "icon": "ROULETTE"
@@ -3300,6 +3370,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#191447] via-[#931f85] to-[#e27536]",
     "label": null,
     "icon": "ROULETTE"
@@ -3344,6 +3415,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#473214] via-[#60931f] to-[#36e2bf]",
     "label": null,
     "icon": "ROULETTE"
@@ -3355,6 +3427,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#141e47] via-[#601f93] to-[#e23641]",
     "label": null,
     "icon": "ROULETTE"
@@ -3366,6 +3439,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472414] via-[#53931f] to-[#47e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3454,6 +3528,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#47141d] via-[#93851f] to-[#3be236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3465,6 +3540,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#14472b] via-[#1f4993] to-[#c236e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -3476,6 +3552,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#144742] via-[#1f4593] to-[#e236ab]",
     "label": null,
     "icon": "ROULETTE"
@@ -3487,6 +3564,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#141c47] via-[#6c1f93] to-[#e23e36]",
     "label": null,
     "icon": "ROULETTE"
@@ -3498,6 +3576,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472414] via-[#7d931f] to-[#36e2a3]",
     "label": null,
     "icon": "ROULETTE"
@@ -3509,6 +3588,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#471436] via-[#93301f] to-[#e2e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3520,6 +3600,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#474214] via-[#51931f] to-[#36b4e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -3531,6 +3612,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471436] via-[#93231f] to-[#5be236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3542,6 +3624,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#144722] via-[#1f6a93] to-[#4a36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -3553,6 +3636,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#444714] via-[#47931f] to-[#36e2bd]",
     "label": null,
     "icon": "ROULETTE"
@@ -3564,6 +3648,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#47142e] via-[#93701f] to-[#7be236]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -3575,6 +3660,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#47142d] via-[#934f1f] to-[#61e236]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -3586,6 +3672,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471428] via-[#93431f] to-[#3ee236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3597,6 +3684,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#291447] via-[#931f5f] to-[#e2cb36]",
     "label": null,
     "icon": "ROULETTE"
@@ -3696,6 +3784,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472e14] via-[#5d931f] to-[#36e2a8]",
     "label": null,
     "icon": "ROULETTE"
@@ -3707,6 +3796,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#364714] via-[#1f9321] to-[#365ee2]",
     "label": null,
     "icon": "ROULETTE"
@@ -3806,6 +3896,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#191447] via-[#931f8b] to-[#e23655]",
     "label": null,
     "icon": "ROULETTE"
@@ -3828,6 +3919,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#3f1447] via-[#931f38] to-[#c5e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -3861,6 +3953,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#143047] via-[#551f93] to-[#e236a6]",
     "label": null,
     "icon": "ROULETTE"
@@ -3872,6 +3965,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#142e47] via-[#681f93] to-[#e236d1]",
     "label": null,
     "icon": "ROULETTE"
@@ -4059,6 +4153,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#142947] via-[#3a1f93] to-[#e236d1]",
     "label": null,
     "icon": "ROULETTE"
@@ -4070,6 +4165,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#144745] via-[#2e1f93] to-[#b436e2]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -4114,6 +4210,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#304714] via-[#1f9362] to-[#36aee2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4158,6 +4255,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#14473d] via-[#1f5d93] to-[#e236b1]",
     "label": null,
     "icon": "ROULETTE"
@@ -4169,6 +4267,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#471422] via-[#93781f] to-[#4de236]",
     "label": null,
     "icon": "ROULETTE"
@@ -4257,6 +4356,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#14472a] via-[#1f7293] to-[#6436e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4279,6 +4379,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#143c47] via-[#2c1f93] to-[#d636e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4290,6 +4391,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#142c47] via-[#641f93] to-[#e236d1]",
     "label": null,
     "icon": "ROULETTE"
@@ -4301,6 +4403,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#47142e] via-[#932e1f] to-[#7de236]",
     "label": null,
     "icon": "ROULETTE"
@@ -4334,6 +4437,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#1c4714] via-[#1f9372] to-[#3661e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4345,6 +4449,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#144742] via-[#1f2a93] to-[#b136e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4378,6 +4483,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471422] via-[#93431f] to-[#36e244]",
     "label": null,
     "icon": "ROULETTE"
@@ -4389,6 +4495,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#14471e] via-[#1f6a93] to-[#7536e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4433,6 +4540,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#1b4714] via-[#1f936e] to-[#3b36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4466,6 +4574,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#144724] via-[#1f7293] to-[#ba36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4554,6 +4663,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#14471c] via-[#1f9374] to-[#8036e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4664,6 +4774,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#144347] via-[#211f93] to-[#d136e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4675,6 +4786,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471417] via-[#936a1f] to-[#36e266]",
     "label": null,
     "icon": "ROULETTE"
@@ -4752,6 +4864,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#472414] via-[#5f931f] to-[#36e24d]",
     "label": null,
     "icon": "ROULETTE"
@@ -4763,6 +4876,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#143047] via-[#321f93] to-[#e23652]",
     "label": null,
     "icon": "ROULETTE"
@@ -4796,6 +4910,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#144724] via-[#1f6c93] to-[#364de2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4873,6 +4988,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#143d47] via-[#1f2893] to-[#e236c5]",
     "label": null,
     "icon": "ROULETTE"
@@ -4928,6 +5044,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#474214] via-[#43931f] to-[#36b1e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4939,6 +5056,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#47142e] via-[#932a1f] to-[#78e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -4950,6 +5068,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#2d4714] via-[#1f9359] to-[#3650e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -4994,6 +5113,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#181447] via-[#931f72] to-[#e25536]",
     "label": null,
     "icon": "ROULETTE"
@@ -5005,6 +5125,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#2d4714] via-[#1f9351] to-[#3669e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5104,6 +5225,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#141f47] via-[#831f93] to-[#e23691]",
     "label": null,
     "icon": "ROULETTE"
@@ -5126,6 +5248,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#142347] via-[#451f93] to-[#e236ab]",
     "label": null,
     "icon": "ROULETTE"
@@ -5137,6 +5260,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472514] via-[#938b1f] to-[#47e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5192,6 +5316,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#221447] via-[#931f8d] to-[#e23652]",
     "label": null,
     "icon": "ROULETTE"
@@ -5225,6 +5350,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#321447] via-[#931f5d] to-[#e2bd36]",
     "label": null,
     "icon": "ROULETTE"
@@ -5236,6 +5362,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#142b47] via-[#471f93] to-[#e236a0]",
     "label": null,
     "icon": "ROULETTE"
@@ -5291,6 +5418,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#47143d] via-[#93361f] to-[#e2d336]",
     "label": null,
     "icon": "ROULETTE"
@@ -5302,6 +5430,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472e14] via-[#51931f] to-[#36e2a8]",
     "label": null,
     "icon": "ROULETTE"
@@ -5313,6 +5442,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#143a47] via-[#401f93] to-[#e2367b]",
     "label": null,
     "icon": "ROULETTE"
@@ -5357,6 +5487,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#144738] via-[#1f3e93] to-[#dc36e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5368,6 +5499,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#201447] via-[#931f66] to-[#e2a636]",
     "label": null,
     "icon": "ROULETTE"
@@ -5379,6 +5511,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#143147] via-[#251f93] to-[#e236d3]",
     "label": null,
     "icon": "ROULETTE"
@@ -5390,6 +5523,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#144727] via-[#1f6e93] to-[#a636e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5412,6 +5546,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#401447] via-[#93261f] to-[#e2ce36]",
     "label": null,
     "icon": "ROULETTE"
@@ -5423,6 +5558,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471437] via-[#93341f] to-[#a8e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5434,6 +5570,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#414714] via-[#3e931f] to-[#36a8e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5445,6 +5582,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#3d4714] via-[#25931f] to-[#36e2d9]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -5456,6 +5594,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#142d47] via-[#471f93] to-[#e236d1]",
     "label": null,
     "icon": "ROULETTE"
@@ -5467,6 +5606,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#144147] via-[#421f93] to-[#e236a6]",
     "label": null,
     "icon": "ROULETTE"
@@ -5478,6 +5618,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#472814] via-[#57931f] to-[#36e286]",
     "label": null,
     "icon": "ROULETTE"
@@ -5489,6 +5630,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#47142f] via-[#93641f] to-[#78e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5500,6 +5642,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#47143e] via-[#931f2a] to-[#e2d336]",
     "label": null,
     "icon": "ROULETTE"
@@ -5511,6 +5654,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#472714] via-[#87931f] to-[#36e247]",
     "label": null,
     "icon": "ROULETTE"
@@ -5522,6 +5666,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#324714] via-[#1f9351] to-[#36dce2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5533,6 +5678,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#14472d] via-[#1f4593] to-[#c236e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -5544,6 +5690,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#473214] via-[#7d931f] to-[#36e2d9]",
     "label": null,
     "icon": "ROULETTE"
@@ -5555,6 +5702,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#471422] via-[#93681f] to-[#80e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5610,6 +5758,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#1f1447] via-[#931f6c] to-[#e26636]",
     "label": null,
     "icon": "ROULETTE"
@@ -5621,6 +5770,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#331447] via-[#931f3a] to-[#e26c36]",
     "label": null,
     "icon": "ROULETTE"
@@ -5632,6 +5782,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#473214] via-[#43931f] to-[#36e294]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -5643,6 +5794,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471418] via-[#93741f] to-[#52e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5654,6 +5806,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#47142c] via-[#93781f] to-[#cee236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5709,6 +5862,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#142147] via-[#871f93] to-[#e23669]",
     "label": null,
     "icon": "ROULETTE"
@@ -5720,6 +5874,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#3b1447] via-[#931f21] to-[#bae236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5731,6 +5886,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471439] via-[#931f26] to-[#a0e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -5962,6 +6118,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#471421] via-[#93811f] to-[#36e25b]",
     "label": null,
     "icon": "ROULETTE"
@@ -6006,6 +6163,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#1b4714] via-[#1f9393] to-[#6c36e2]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -6028,6 +6186,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#324714] via-[#1f935f] to-[#3683e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -6094,6 +6253,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#141c47] via-[#871f93] to-[#e2368c]",
     "label": "NEW",
     "icon": "ROULETTE"
@@ -6611,6 +6771,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#181447] via-[#891f93] to-[#e25236]",
     "label": null,
     "icon": "ROULETTE"
@@ -6765,6 +6926,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#304714] via-[#1f934f] to-[#3683e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -6787,6 +6949,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#294714] via-[#1f937d] to-[#365ee2]",
     "label": null,
     "icon": "ROULETTE"
@@ -6908,6 +7071,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#2e4714] via-[#1f9372] to-[#369de2]",
     "label": null,
     "icon": "ROULETTE"
@@ -6919,6 +7083,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#1d1447] via-[#8f1f93] to-[#e26936]",
     "label": null,
     "icon": "ROULETTE"
@@ -6930,6 +7095,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#144718] via-[#1f9374] to-[#5036e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -6941,6 +7107,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#1b4714] via-[#1f8993] to-[#6f36e2]",
     "label": "HOT",
     "icon": "ROULETTE"
@@ -6963,6 +7130,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#142447] via-[#761f93] to-[#e2369d]",
     "label": null,
     "icon": "ROULETTE"
@@ -6985,6 +7153,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#3b4714] via-[#1f933c] to-[#3691e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -7084,6 +7253,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#471422] via-[#93571f] to-[#6ce236]",
     "label": "VIP",
     "icon": "ROULETTE"
@@ -7150,6 +7320,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "minimalist",
     "accent": "from-[#471418] via-[#93601f] to-[#36e236]",
     "label": null,
     "icon": "ROULETTE"
@@ -7183,6 +7354,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "neon-cyberpunk",
     "accent": "from-[#451447] via-[#931f3c] to-[#e2d936]",
     "label": null,
     "icon": "ROULETTE"
@@ -7194,6 +7366,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "vegas-classic",
     "accent": "from-[#141547] via-[#7c1f93] to-[#e23683]",
     "label": null,
     "icon": "ROULETTE"
@@ -7205,6 +7378,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "gold-vip",
     "accent": "from-[#14473a] via-[#1f5993] to-[#b436e2]",
     "label": null,
     "icon": "ROULETTE"
@@ -7238,6 +7412,7 @@ export const fullGamesCatalog: CatalogGame[] = [
     "subCategory": "Roulette",
     "provider": "PlayVault Live",
     "engineType": "roulette",
+    "skin": "indian-royal",
     "accent": "from-[#181447] via-[#741f93] to-[#e23e36]",
     "label": null,
     "icon": "ROULETTE"
