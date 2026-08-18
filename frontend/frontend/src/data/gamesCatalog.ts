@@ -8,6 +8,7 @@ export interface CatalogGame {
   subCategory: string;
   provider: string;
   engineType: 'roulette' | 'blackjack' | 'baccarat' | 'teenpatti' | 'gameshow' | 'dice' | 'slot' | 'crash' | 'coinflip' | 'limbo' | 'keno';
+  /** Purely presentational — picks which visual theme a catalog entry renders with. Never affects odds/payouts. */
   skin?: string;
   accent: string;
   label: string | null;

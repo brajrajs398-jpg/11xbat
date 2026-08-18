@@ -10,6 +10,12 @@ type AuthContextType = {
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
+  /** DEV ONLY — bypasses the backend entirely with a fake local session so
+   * the UI (catalog, skins, layouts) can be reviewed without a reachable
+   * API. Any action that actually calls the backend (placing a bet,
+   * dealing a hand, etc.) will still fail — this is for visual QA only.
+   * Remove before a real launch build. */
+  devSkipSignIn: () => void;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -76,8 +82,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setProfile(null);
   };
 
+  const devSkipSignIn = () => {
+    setSession({ access_token: 'dev-local-token' });
+    setUser({ id: 'dev-local-user', email: 'dev@local.test' });
+    setProfile({ id: 'dev-local-user', username: 'DevPreview', balance: 1000, created_at: new Date().toISOString() });
+    setLoading(false);
+  };
+
   return (
-    <AuthContext.Provider value={{ session, user, profile, loading, signUp, signIn, signOut, refreshProfile }}>
+    <AuthContext.Provider value={{ session, user, profile, loading, signUp, signIn, signOut, refreshProfile, devSkipSignIn }}>
       {children}
     </AuthContext.Provider>
   );

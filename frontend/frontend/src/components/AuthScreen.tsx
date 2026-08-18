@@ -3,7 +3,7 @@ import { useAuth } from '@/lib/useAuth';
 import { Dices, Loader2, AlertCircle } from 'lucide-react';
 
 export default function AuthScreen() {
-  const { signIn, signUp } = useAuth();
+  const { signIn, signUp, devSkipSignIn } = useAuth();
   const [mode, setMode] = useState<'signin' | 'signup'>('signin');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -124,6 +124,15 @@ export default function AuthScreen() {
             New players get 1,000 free virtual coins
           </p>
         </div>
+
+        {import.meta.env.DEV && (
+          <button
+            onClick={devSkipSignIn}
+            className="w-full mt-4 text-xs text-gray-500 hover:text-gray-300 border border-dashed border-gray-700 hover:border-gray-500 rounded-xl py-2.5 transition-colors"
+          >
+            Skip Sign In (Dev preview — no backend needed)
+          </button>
+        )}
       </div>
     </div>
   );
